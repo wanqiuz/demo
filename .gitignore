@@ -1,0 +1,12 @@
+# IDEA
+.idea/
+*.iml
+
+# Maven
+target/
+
+# MacOS
+.DS_Store
+
+# local files
+*-local.*
