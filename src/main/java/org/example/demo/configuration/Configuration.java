@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * This is where configuration parsing and reading takes place
+ */
 public class Configuration {
 
     private static final String DEFAULT_PROPERTIES = "application.properties";

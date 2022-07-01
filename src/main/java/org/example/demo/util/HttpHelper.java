@@ -13,6 +13,9 @@ import org.example.demo.exception.ClientException;
 import org.example.demo.modal.dto.response.ErrorResponseDto;
 import org.example.demo.servlet.ControllerLogic;
 
+/**
+ * Handles some HTTP related parameter parsing and standard process flow
+ */
 public class HttpHelper {
 
     private static final Logger logger = Logger.getGlobal();

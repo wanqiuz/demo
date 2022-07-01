@@ -5,6 +5,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * main class for hash of password and secure compare
+ */
 public class PasswordHelper {
 
     //    private static final ThreadLocal<Random> SECURE_RANDOM =

@@ -13,6 +13,10 @@ import org.example.demo.modal.entity.Role;
 import org.example.demo.modal.entity.Token;
 import org.example.demo.modal.entity.User;
 
+/**
+ * Role service involving all role-related methods
+ * High-level Business related exceptions are thrown here
+ */
 public class RoleService {
     private final InMemoryDatabase inMemoryDatabase;
 

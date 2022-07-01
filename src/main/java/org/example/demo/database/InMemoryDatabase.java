@@ -11,6 +11,11 @@ import org.example.demo.modal.entity.Role;
 import org.example.demo.modal.entity.Token;
 import org.example.demo.modal.entity.User;
 
+/**
+ * In memory database that store all data
+ * Only business-irrelevant primitive exceptions are thrown
+ * TODO: split to smaller classes
+ */
 public class InMemoryDatabase {
     private final Map<String, User> users = new HashMap<>();
 
@@ -124,6 +129,9 @@ public class InMemoryDatabase {
         return roles.get(roleName);
     }
 
+    /**
+     * truncate database for test purpose
+     */
     public void truncate() {
         lock.writeLock().lock();
         try {

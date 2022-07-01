@@ -1,5 +1,8 @@
 package org.example.demo.constant;
 
+/**
+ * Some brief error messages
+ */
 public class CodeConstants {
     public static final String SUCCESS = "SUCCESS";
     public static final String INTERNAL_SERVER_ERROR = "InternalServerError";

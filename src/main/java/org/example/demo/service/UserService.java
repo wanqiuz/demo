@@ -12,6 +12,10 @@ import org.example.demo.modal.entity.Token;
 import org.example.demo.modal.entity.User;
 import org.example.demo.util.PasswordHelper;
 
+/**
+ * User service involving all user-related methods
+ * High-level Business related exceptions are thrown here
+ */
 public class UserService {
     private final InMemoryDatabase inMemoryDatabase;
 

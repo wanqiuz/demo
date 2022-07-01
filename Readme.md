@@ -3,12 +3,12 @@
 * mvn 3.5.3
 
 ## dependencies
-embed tomcat: include embed web server to be a self-contained project
-junit: for unit test purpose
-jackson: for converting from json string to object
+* embed tomcat: include embed web server to be a self-contained project
+* junit: for unit test purpose
+* jackson: for converting from json string to object
 
 ## plugin
-spotless: for code format
+* spotless: for code format
 
 ## Doc
 ### Model
@@ -16,7 +16,7 @@ spotless: for code format
 
 | field | type | comment |
 | :----: | :----: | :----: |
-| username | String | |
+| username | String | username |
 | passwordSalt | byte[] | random salt |
 | passwordHash | byte[] | The calculation method is hash(passwordSalt + originalPassword) by SHA-256 |
 | roles | Set\<String\> | all role names associated with the user |
@@ -25,7 +25,7 @@ spotless: for code format
 
 | field | type | comment |
 | :----: | :----: | :----: |
-| roleName | String | |
+| roleName | String | role name |
 
 #### Token
 
@@ -129,7 +129,7 @@ Http code 200 if success
 ```json
 {
     "code": "SUCCESS",
-    "message": "User deleted"
+    "message": "Role associate with the user"
 }
 ```
 
@@ -174,7 +174,10 @@ Http code 200 if success
 ```json
 {
     "code": "SUCCESS",
-    "message": "Role checked"
+    "message": "Role checked",
+    "data": {
+        "hasRole": true
+    } ,
 }
 ```
 
@@ -216,7 +219,10 @@ Http code 200 if success
 ```json
 {
     "code": "SUCCESS",
-    "message": "User login"
+    "message": "User login",
+    "data": {
+        "token": "xxxxx"
+    } 
 }
 ```
 
@@ -372,7 +378,12 @@ Http code 200 if success
 ```json
 {
     "code": "SUCCESS",
-    "message": "Role list"
+    "message": "Role list",
+    "data": {
+        "roles": [{
+            "roleName": "xxxxx"
+        }]
+    } 
 }
 ```
 

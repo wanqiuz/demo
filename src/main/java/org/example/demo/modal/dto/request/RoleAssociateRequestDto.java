@@ -1,4 +1,4 @@
-package org.example.demo.modal.dto.response;
+package org.example.demo.modal.dto.request;
 
 public class RoleAssociateRequestDto {
     String username;

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.example.demo.exception.IllegalArgumentException;
 import org.example.demo.modal.dto.request.UserCreateRequestDto;
 import org.example.demo.modal.dto.response.RichSuccessResponseDto;
-import org.example.demo.modal.dto.response.RoleAssociateRequestDto;
+import org.example.demo.modal.dto.request.RoleAssociateRequestDto;
 import org.example.demo.modal.dto.response.RoleCheckResponseDto;
 import org.example.demo.modal.dto.response.SuccessResponseDto;
 import org.example.demo.service.UserService;
